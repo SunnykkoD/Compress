@@ -106,9 +106,9 @@ async def ccom(e):
         repl = await reply
         if "." in repl.text:
             q = repl.text.split(".")[-1]
-            g = repl.text.replace(q, "mkv")
+            g = repl.text.replace(q, "mp4")
         else:
-            g = repl.text + ".mkv"
+            g = repl.text + ".mp4"
         outt = f"encode/{chat}/{g}"
         x = await repl.reply(
             f"Custom File Name : {g}\n\nSend Thumbnail Picture For it."
